@@ -1,0 +1,20 @@
+import React from "react"
+import { Text, View, Button } from "react-native"
+
+
+const Landing = ({ navigation }) => {
+
+    return (
+    <View style={{flex:1,justifyContent:'center'}}>
+        <Button
+        title="Registrati"
+        onPress={()=> navigation.navigate("Register")}/>
+        <Button
+        title="Login"
+        onPress={()=> navigation.navigate("Login")}/>
+    </View>
+    )
+}
+
+export default Landing
+
